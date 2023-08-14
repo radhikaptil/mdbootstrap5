@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+
+</head>
+<body>
+    <center>
+        <h1>Tooltips</h1>
+
+      <h1>
+        <button type="button" class="btn btn-secondary" data-mdb-toggle="tooltip" data-mdb-placement="top" title="Tooltip on top">
+          Tooltip on top
+        </button>
+        <button type="button" class="btn btn-secondary" data-mdb-toggle="tooltip" data-mdb-placement="right" title="Tooltip on right">
+          Tooltip on right
+        </button>
+        <button type="button" class="btn btn-secondary" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Tooltip on bottom">
+          Tooltip on bottom
+        </button>
+        <button type="button" class="btn btn-secondary" data-mdb-toggle="tooltip" data-mdb-placement="left" title="Tooltip on left">
+          Tooltip on left
+        </button>
+      </h1>
+
+        <button
+  type="button"
+  class="btn btn-secondary"
+  data-mdb-toggle="tooltip"
+  data-mdb-html="true"
+  title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
+>
+  Tooltip with HTML
+</button>
+
+        
+    </center>
+    
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+
+</body>
+</html>

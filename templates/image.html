@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+
+</head>
+<body style="background-image: url({% static 'images/bird.jpeg' %});">
+    
+
+<script src="{% static 'js/mdb.min.js' %}"></script>
+
+</body>
+</html>
